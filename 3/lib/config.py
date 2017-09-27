@@ -2,7 +2,7 @@ import os
 import importlib
 
 ENVIRONMENT_VARIABLE = 'TEST_ENV'
-DEFAULT_ENV = 'local'
+DEFAULT_ENV = 'production'
 
 def set_env():
     env = os.environ.get('TEST_ENV')

@@ -5,6 +5,7 @@ from config import settings
 
 logger = logging.getLogger('public_api')
 
+@pytest.mark.ui
 class TestUiRegistration:
     """Test registration from ui"""
 

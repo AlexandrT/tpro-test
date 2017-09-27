@@ -13,7 +13,8 @@ logger = logging.getLogger('public_api')
 REQUEST_PATH = '/_company.info_public.json'
 REQUEST_TYPE = 'GET'
 
-class TestFindCities:
+@pytest.mark.api
+class TestCompanyInfo:
     """Test get company info"""
 
     def setup_class(cls):
