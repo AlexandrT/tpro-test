@@ -1,0 +1,8 @@
+*.log
+*.swp
+
+__pycahce__/
+*.py[cod]
+.cache/
+
+.DS_Store

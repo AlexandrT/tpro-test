@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "required": ["error"],
+  "properties": {
+    "error": {
+      "type": "object",
+      "required": ["data", "message", "code"],
+      "properties": {
+        "data": {
+          "type": "object",
+          "required": ["note"],
+          "properties": {
+            "note": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "message": { "type": "string" },
+        "code": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

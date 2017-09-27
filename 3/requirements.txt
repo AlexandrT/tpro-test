@@ -1,0 +1,10 @@
+pytest
+pytest-logger
+pytest-html
+
+pytest-selenium
+
+pyhamcrest
+jsonschema
+
+requests

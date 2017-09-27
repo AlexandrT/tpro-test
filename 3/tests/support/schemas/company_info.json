@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "required": ["success", "result"],
+  "properties": {
+    "success": { "type": "string"},
+    "result": {
+      "type": "object",
+      "required": ["args", "data"],
+      "properties": {
+        "args": {
+          "type": "object",
+          "required": ["id"],
+          "properties": {
+            "id": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "data": {
+          "type": "object",
+          "required": ["address_legal", "title_full", "anno_short", "rating", "is_seller_producer", "country_id", "fax", "is_type_seller", "address", "id", "anno", "type_name", "country_name", "phone", "seller_type_name", "kpp", "inn", "site", "title"],
+          "properties": {
+            "address_legal": { "type": "string" },
+            "title_full": { "type": "string" },
+            "anno_short": { "type": "string" },
+            "rating": { "type": ["integer", "null"] },
+            "is_seller_producer": { "type": "integer" },
+            "country_id": { "type": "integer" },
+            "fax": { "type": "string" },
+            "is_type_seller": { "type": "integer" },
+            "address": { "type": "string" },
+            "id": { "type": "integer" },
+            "anno": { "type": "string" },
+            "type_name": { "type": "string" },
+            "country_name": { "type": "string" },
+            "phone": { "type": "string" },
+            "seller_type_name": { "type": "string" },
+            "kpp": { "type": "string" },
+            "inn": { "type": "string" },
+            "site": { "type": "string" },
+            "title": { "type": "string" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

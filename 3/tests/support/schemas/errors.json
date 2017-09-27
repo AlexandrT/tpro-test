@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "required": ["success", "result"],
+  "properties": {
+    "success": { "type": "string"},
+    "result": {
+      "type": "object",
+      "required": ["error"],
+      "properties": {
+        "error": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "error.json"
+          },
+          "minItems": 1,
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
